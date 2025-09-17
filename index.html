@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigelow's Monthly Spendings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">WELLS FARGO </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        </section>
+        <section class="hero" id="home">
+            <h1>My Monthly Spendings</h1>
+            <p>Track your monthly spendings, view transactions, and analyze your finances.</p>
+        </section>
+        <div class="spending-comparison" style="margin-bottom: 1.2rem;">
+            <span class="comparison-icon" title="You spent more this month than last month"></span>
+            <span class="comparison-text">You spent <b>12% more</b> this month compared to August.</span>
+        </div>
+        <section class="about" id="budget-tracker">
+            <h2>Budget Tracker</h2>
+            <div class="budget-progress-container" style="margin: 1.5rem 0;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                <span>Spent: <b>$2,150</b></span>
+                <span>Budget: <b>$2,500</b></span>
+              </div>
+              <div class="budget-bar-animated-bg">
+                <div class="budget-bar-animated-fill" style="width: 86%;">
+                  <span class="budget-bar-dot"></span>
+                </div>
+              </div>
+              <div style="text-align: right; margin-top: 0.3rem; font-size: 0.98rem; color: #e53935; font-weight: 600;">
+                86% of your budget used
+              </div>
+        <section class="about" id="summary">
+            <h2>Account Summary</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Current Balance</h3>
+                    <p class="balance">$4,250.00</p>
+                </div>
+                <div class="card">
+                    <h3>Income (Sep)</h3>
+                    <p class="income">$5,000.00</p>
+                </div>
+                <div class="card">
+                    <h3>Expenses (Sep)</h3>
+                    <p class="expenses">$2,150.00</p>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="transactions">
+            <h2>Recent Transactions</h2>
+            <div style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                <div class="table-responsive" style="flex: 2 1 340px; min-width: 280px;">
+                    <table class="transactions-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2025-09-15</td>
+                                <td>Lidl</td>
+                                <td>Groceries</td>
+                                <td>-$120.50</td>
+                            </tr>
+                            <tr>
+                                <td>2025-09-14</td>
+                                <td>Salary</td>
+                                <td>Income</td>
+                                <td>+$2,500.00</td>
+                            </tr>
+                            <tr>
+                                <td>2025-09-13</td>
+                                <td>Electricity Bill</td>
+                                <td>Bills</td>
+                                <td>-$140.00</td>
+                            </tr>
+                            <tr>
+                                <td>2025-09-12</td>
+                                <td>Netflix</td>
+                                <td>Entertainment</td>
+                                <td>-$17.99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    <div style="flex: 1 1 320px; min-width: 220px; max-width: 340px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; margin-top: -1.2rem;">
+                        <div style="margin-bottom: 0.7rem; text-align: center; font-weight: 600; font-size: 1.18rem; color: #333;">Thinking about a loan?</div>
+                        <img src="images/loan.jpg" alt="Loan" style="width: 100%; max-width: 320px; border-radius: 14px; box-shadow: 0 4px 18px rgba(0,0,0,0.10);" />
+                        <button class="borrow-now-btn" style="margin-top: 0.6rem; background: #e53935; color: #fff; border: none; border-radius: 20px; padding: 0.45em 1.3em; font-weight: 550; font-size: 1rem; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.07); transition: background 0.2s;">Borrow Now</button>
+            </div>
+        </section>
+        <!-- Alerts Header Section -->
+        <section class="about" id="alerts">
+            <h2 class="resources-header">Alerts</h2>
+            <div class="alerts-list" style="display: flex; flex-direction: column; gap: 1.1rem; margin: 1.2rem 0 0.5rem 0;">
+                <!-- Upcoming Bill Alert -->
+                <div class="alert-popup" style="background: #fffbe6; border-left: 5px solid #ffd600; border-radius: 10px; box-shadow: 0 2px 10px rgba(255,214,0,0.10); padding: 1rem 1.2rem; display: flex; align-items: flex-start; gap: 1rem; position: relative;">
+                    <span class="alert-bell" style="margin-top: 2px;">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="13" fill="#ffd600" stroke="#bfa600" stroke-width="2"/><path d="M14 8c-2.5 0-4 1.7-4 4.5V16l-1.2 1.2c-.3.3-.1.8.3.8h9.8c.4 0 .6-.5.3-.8L18 16v-3.5C18 9.7 16.5 8 14 8Z" fill="#fffbe6" stroke="#bfa600" stroke-width="1.2"/><circle cx="14" cy="21" r="1.2" fill="#bfa600"/></svg>
+                    </span>
+                    <div>
+                        <div class="alert-label" style="font-weight: 600; color: #bfa600; font-size: 1.02rem; margin-bottom: 0.2rem;">Reminder</div>
+                        <div class="alert-message" style="color: #333; font-size: 1rem;">Upcoming bill: Your <b>Electricity Bill</b> of <b>$140.00</b> is due on <b>September 20</b>.</div>
+                    </div>
+                </div>
+                <!-- Past Due Bill Alert -->
+                <div class="alert-popup" style="background: #fff3e0; border-left: 5px solid #e53935; border-radius: 10px; box-shadow: 0 2px 10px rgba(229,57,53,0.10); padding: 1rem 1.2rem; display: flex; align-items: flex-start; gap: 1rem; position: relative;">
+                    <span class="alert-bell" style="margin-top: 2px;">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14" cy="14" r="13" fill="#ffd600" stroke="#bfa600" stroke-width="2"/><path d="M14 8c-2.5 0-4 1.7-4 4.5V16l-1.2 1.2c-.3.3-.1.8.3.8h9.8c.4 0 .6-.5.3-.8L18 16v-3.5C18 9.7 16.5 8 14 8Z" fill="#fffbe6" stroke="#bfa600" stroke-width="1.2"/><circle cx="14" cy="21" r="1.2" fill="#bfa600"/></svg>
+                    </span>
+                    <div>
+                        <div class="alert-label" style="font-weight: 600; color: #e53935; font-size: 1.02rem; margin-bottom: 0.2rem;">Reminder</div>
+                        <div class="alert-message" style="color: #333; font-size: 1rem;">Past due: Your <b>Netflix</b> subscription payment of <b>$17.99</b> was due on <b>September 10</b>. Please pay to avoid service interruption.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="categories">
+            <h2>Spending by Category</h2>
+            <!-- Pie Chart for Spending by Category -->
+            <div class="pie-chart-toggle-wrapper">
+                <div class="pie-chart-tab" onclick="togglePieChart()">&#x25BC; Spending by Category</div>
+                <div class="pie-chart-container" id="pieChartCollapse">
+                    <canvas id="spendingPieChart" width="320" height="320" aria-label="Spending by Category Pie Chart" role="img"></canvas>
+                </div>
+            </div>
+            <script>
+            function togglePieChart() {
+                var chart = document.getElementById('pieChartCollapse');
+                var tab = document.querySelector('.pie-chart-tab');
+                if (chart.style.display === 'none') {
+                    chart.style.display = 'flex';
+                    tab.textContent = 'Close Chart';
+                } else {
+                    chart.style.display = 'none';
+                    tab.textContent = 'Open Chart';
+                }
+            }
+            // Start open
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('pieChartCollapse').style.display = 'flex';
+                document.querySelector('.pie-chart-tab').textContent = 'Close Chart';
+            });
+            </script>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Groceries</h3>
+                    <div class="bar" style="width: 80%; background:#ffcdd2; height:16px; border-radius:8px;"></div>
+                    <p>$504 <span class="trend-up" title="Groceries up 5%"></span></p>
+                </div>
+                <div class="card">
+                    <h3>Bills</h3>
+                    <div class="bar" style="width: 40%; background:#ffe0b2; height:16px; border-radius:8px;"></div>
+                    <p>$430</p>
+                </div>
+                <div class="card">
+                    <h3>Dining</h3>
+                    <div class="bar" style="width: 20%; background:#c8e6c9; height:16px; border-radius:8px;"></div>
+                    <p>$160</p>
+                </div>
+                <div class="card">
+                    <h3>Shopping</h3>
+                    <div class="bar" style="width: 30%; background:#bbdefb; height:16px; border-radius:8px;"></div>
+                    <p>$322</p>
+                </div>
+                <div class="card">
+                    <h3>Entertainment <span class="trend-up" title="Subscriptions up 8%"></span></h3>
+                    <div class="bar" style="width: 18%; background:#f8bbd0; height:16px; border-radius:8px;"></div>
+                    <p>$120 <span class="trend-up" title="Subscriptions up 8%"></span></p>
+                </div>
+                <div style="display: flex; justify-content: center; width: 100%;">
+                <div class="gas-other-row" style="display: flex; justify-content: center; width: 100%;">
+                  <div class="card" style="flex:1; min-width:0; max-width:140px; margin-right:0.3rem;">
+                      <h3>Gas <span class="trend-up" title="Gas prices up 12%"></span></h3>
+                      <div class="bar" style="width: 22%; background:#ffe082; height:16px; border-radius:8px;"></div>
+                      <p>$180 <span class="trend-up" title="Gas up 12%"></span></p>
+                  </div>
+                  <div class="card" style="flex:1; min-width:0; max-width:140px; margin-left:0.3rem;">
+                      <h3>Other</h3>
+                      <div class="bar" style="width: 30%; background:#d1c4e9; height:16px; border-radius:8px;"></div>
+                      <p>$323</p>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="analytics">
+            <h2>Monthly Analytics</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Total Transactions <span class="info-icon" title="Number of all transactions this month"></span></h3>
+                    <p>42</p>
+                </div>
+                <div class="card">
+                    <h3>Average Daily Spend <span class="info-icon" title="Average amount spent per day"></span></h3>
+                    <p>$71.67</p>
+                </div>
+                <div class="card">
+                    <h3>Biggest Expense <span class="info-icon" title="Your largest single expense this month"></span></h3>
+                    <p>$504 (Groceries)</p>
+                </div>
+            </div>
+
+
+            <div class="about insights">
+                <h3>Spending Insights & Tips</h3>
+                <ul>
+                    <li>Your <b>Netflix</b> subscription price has increased since last month.</li>
+                    <li><b>Gas</b> prices have risen <b>12%</b>. Be conscious where you choose to fill up next!</li>
+                    <li><b>Dining</b> expenses: You spent <b>$120</b> on fast food and <b>$40</b> on delivery this month.</li>
+
+                </ul>
+            </div>
+        </section>
+        <section class="about" id="analytics">
+            <h2 class="resources-header">Resources</h2>
+            <div class="service-cards" style="justify-content: center; display: flex; flex-wrap: wrap; gap: 1.2rem;">
+                <div class="card resource-card" style="max-width:260px; flex:1 1 260px;">
+                    <div class="resource-img-slot" style="height:110px; background:#f5f5f5; border-radius:12px; margin-bottom:0.7rem; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                        <img src="images/piggy.png" alt="Piggy Bank" style="height:100%; width:100%; object-fit:cover; object-position: center 80%; display:block;" />
+                    </div>
+                    <h3 style="text-align:center;">Saving Money</h3>
+                <div class="arrow-link-wrapper">
+                    <a href="https://www.wellsfargo.com/financial-goals/save/" class="arrow-link" target="_blank" rel="noopener">
+                        <svg class="arrow-svg" width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polyline class="arrow-path" points="10,4 20,9 10,14" fill="none" />
+                        </svg>
+                        <span class="arrow-explore-label">Explore</span>
+                        <span class="sr-only">Learn more about saving money</span>
+                    </a>
+                </div>
+                </div>
+                <div class="card resource-card" style="max-width:260px; flex:1 1 260px;">
+                    <div class="resource-img-slot" style="height:110px; background:#f5f5f5; border-radius:12px; margin-bottom:0.7rem; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                        <img src="images/climb.jpg" alt="Borrowing Money" style="height:100%; width:100%; object-fit:cover; display:block;" />
+                    </div>
+                    <h3 style="text-align:center;">Borrowing Money</h3>
+                <div class="arrow-link-wrapper">
+                    <a href="https://www.wellsfargo.com/financial-goals/borrow/?utm_medium=www-redirect&utm_source=financial-goals--borrow--index" class="arrow-link" target="_blank" rel="noopener">
+                        <svg class="arrow-svg" width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polyline class="arrow-path" points="10,4 20,9 10,14" fill="none" />
+                        </svg>
+                        <span class="arrow-explore-label">Explore</span>
+                        <span class="sr-only">Learn more about borrowing money</span>
+                    </a>
+                </div>
+                </div>
+                <div class="card resource-card" style="max-width:260px; flex:1 1 260px;">
+                    <div class="resource-img-slot" style="height:110px; background:#f5f5f5; border-radius:12px; margin-bottom:0.7rem; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                        <img src="images/lock.png" alt="Protecting Money" style="height:100%; width:100%; object-fit:cover; display:block;" />
+                    </div>
+                    <h3 style="text-align:center;">Protecting Money</h3>
+                <div class="arrow-link-wrapper">
+                    <a href="https://www.wellsfargo.com/financial-goals/protect/?utm_medium=www-redirect&utm_source=financial-goals--protect--index" class="arrow-link" target="_blank" rel="noopener">
+                        <svg class="arrow-svg" width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polyline class="arrow-path" points="10,4 20,9 10,14" fill="none" />
+                        </svg>
+                        <span class="arrow-explore-label">Explore</span>
+                        <span class="sr-only">Learn more about protecting money</span>
+                    </a>
+                </div>
+                </div>
+                <div class="card resource-card" style="max-width:260px; flex:1 1 260px;">
+                    <div class="resource-img-slot" style="height:110px; background:#f5f5f5; border-radius:12px; margin-bottom:0.7rem; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+                        <img src="images/plant.jpg" alt="Investing Money" style="height:100%; width:100%; object-fit:cover; display:block;" />
+                    </div>
+                    <h3 style="text-align:center;">Investing Money</h3>
+                <div class="arrow-link-wrapper">
+                    <a href="https://www.wellsfargo.com/financial-goals/invest/?utm_medium=www-redirect&utm_source=financial-goals--invest--index" class="arrow-link" target="_blank" rel="noopener">
+                        <svg class="arrow-svg" width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polyline class="arrow-path" points="10,4 20,9 10,14" fill="none" />
+                        </svg>
+                        <span class="arrow-explore-label">Explore</span>
+                        <span class="sr-only">Learn more about investing money</span>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Olivia Bigelow's Wells Fargo X Early Talent Competition. All rights reserved.</p>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    </script>
+    <script src="piechart.js"></script>
+</body>
+</html>
